@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "python": "3.10.20",
+  "numpy": "2.2.5",
+  "scipy": "1.15.3",
+  "matplotlib": "3.10.9",
+  "model_function_implementations_unchanged": true,
+  "unit_tests_passed": 5,
+  "full_reproduction_seconds": 424.9,
+  "ternary_points_verified": 435,
+  "potency_conditions_verified": 396,
+  "png_pixel_equality": {
+    "3-1": true,
+    "3-2": true,
+    "3-3": true
+  },
+  "experimental_validation": false,
+  "github_structure_verification": {
+    "date": "2026-10-11",
+    "timezone": "Asia/Shanghai",
+    "reproduction_seconds": 199.1,
+    "unit_tests_passed": 5,
+    "ternary_points_verified": 435,
+    "potency_conditions_verified": 396,
+    "all_pngs_pixel_identical": true,
+    "source_directory": "src",
+    "reference_directory": "reference",
+    "generated_directory": "output"
+  }
+}

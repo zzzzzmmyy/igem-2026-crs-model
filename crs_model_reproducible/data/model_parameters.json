@@ -1,0 +1,64 @@
+{
+  "description": "Illustrative simulation inputs; not experimental observations or fitted estimates.",
+  "growth_rates": {
+    "mu_S": 1.2889908256880733,
+    "mu_R": 1.0,
+    "mu_C": 0.9013761467889907
+  },
+  "K": 1.0,
+  "kappa": 6.0,
+  "delta": 6.0,
+  "kill": 8.0,
+  "initial_total_density": 0.01,
+  "time_units": "normalized model time; physical hours require reference-growth calibration",
+  "figure_3_1": {
+    "C_R_S_ratios": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        0.1,
+        1,
+        1
+      ],
+      [
+        0.02,
+        1,
+        1
+      ]
+    ],
+    "duration": 30,
+    "samples": 400
+  },
+  "passage": {
+    "duration": 12,
+    "dilution": 100,
+    "extinct_threshold": 1e-06
+  },
+  "figure_3_2": {
+    "grid_divisions": 28,
+    "points": 435,
+    "passages": 60
+  },
+  "figure_3_3": {
+    "r_C_range": [
+      0.01,
+      0.5
+    ],
+    "r_C_count": 22,
+    "potency_range": [
+      0.5,
+      10
+    ],
+    "potency_count": 18,
+    "passages": 40,
+    "potency_assignment": "kappa=kill=p"
+  }
+}
