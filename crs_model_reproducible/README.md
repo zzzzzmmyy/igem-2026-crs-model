@@ -16,10 +16,6 @@ C:R:S competition analysis described in the **Model** section.
 - `tests/`: Mechanistic checks and complete-grid regression verification.
 - `docs/` and `LICENSE`: Model assumptions, provenance, validation, Wiki draft and licenses.
 
-The model equations, rate values, sampling grids, numerical thresholds and passage
-protocol are preserved. This release adopts the organization of the team's
-[fluorescence model package](https://github.com/zzzzzmmyy/igem-2026-fluorescence-model/tree/main/fluorescence_model_reproducible).
-There is no browser workbench or bundled third-party JavaScript in this module.
 
 ## Reproduction Steps (Windows)
 
@@ -65,28 +61,4 @@ results. Persistence counts and loss labels must match; the implementation uses
 the same default SciPy solver settings as the original code. Image byte equality
 is not required across different environments.
 
-## Interpretation and Limitations
 
-This is a deterministic, well-mixed model. It contains no local protection of S
-by R, spatial neighborhoods, or demographic stochasticity. The 60-passage
-ternary scan has maximum three-strain persistence **20 passages**. The potency
-scan covers **22 x 18** conditions and 40 passages; its maximum is 22.
-
-Loss means a relative-abundance threshold crossing, not observed biological
-extinction. Crossing the threshold does not remove a strain from the ODE.
-The proposed 5-20% producer range is exploratory, not a calibrated optimum.
-Growth rates are relative to mu_R; physical-hour interpretation requires an
-experimentally calibrated reference growth rate. See `docs/MODEL.md` for details.
-No experimental validation or topology-only oscillation source code is supplied
-with this module. Numerical regression verifies reproducibility, not biological accuracy.
-
-## License and iGEM Publication
-
-Source code, tests and README: MIT License (`LICENSE`). Wiki narrative and generated
-figures: CC BY 4.0 (`docs/CONTENT_LICENSE.md`). Credit actual contributors before publication.
-
-GitHub is an additional public archive. Best Software also requires source in the
-dedicated iGEM GitLab software repository. Detailed results stay on `/model`,
-while the `/software` page describes award-relevant software evidence and links
-to this module. Wiki images must use official iGEM Uploads URLs; GitHub-hosted
-images should not be loaded directly by the Wiki. This local package is not yet published.
